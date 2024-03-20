@@ -129,7 +129,7 @@ namespace Project3 {
 					this->çåëåíèéToolStripMenuItem2, this->ñèí³éToolStripMenuItem2, this->æîâòèéToolStripMenuItem
 			});
 			this->contextMenuStrip1->Name = L"contextMenuStrip1";
-			this->contextMenuStrip1->Size = System::Drawing::Size(168, 132);
+			this->contextMenuStrip1->Size = System::Drawing::Size(241, 165);
 			// 
 			// ÷åðâîíèéToolStripMenuItem2
 			// 
@@ -148,8 +148,9 @@ namespace Project3 {
 			// ñèí³éToolStripMenuItem2
 			// 
 			this->ñèí³éToolStripMenuItem2->Name = L"ñèí³éToolStripMenuItem2";
-			this->ñèí³éToolStripMenuItem2->Size = System::Drawing::Size(167, 32);
+			this->ñèí³éToolStripMenuItem2->Size = System::Drawing::Size(240, 32);
 			this->ñèí³éToolStripMenuItem2->Text = L"Ñèí³é";
+			this->ñèí³éToolStripMenuItem2->Click += gcnew System::EventHandler(this, &MyForm::ñèí³éToolStripMenuItem2_Click);
 			// 
 			// menuStrip1
 			// 
@@ -335,6 +336,9 @@ private: System::Void çåëåíèéToolStripMenuItem_Click(System::Object^ sender, Sys
 }
 private: System::Void çåëåíèéToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
 	BackColor = Color::Green;
+}
+private: System::Void ñèí³éToolStripMenuItem2_Click(System::Object^ sender, System::EventArgs^ e) {
+	label1->ForeColor = Color::Blue;
 }
 };
 }
